@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>بدر — تواصل معي</title>
+  <meta name="description" content="بدر — صفحة تواصل: واتساب، فيسبوك، تليفون وإيميل. تواصل معي بسهولة." />
+  <!-- Open Graph (لمشاركة أحسن في فيسبوك/واتساب) -->
+  <meta property="og:title" content="بدر — تواصل معي" />
+  <meta property="og:description" content="تواصل مع بدر عبر واتساب، فيسبوك، التليفون أو الإيميل." />
+  <meta property="og:type" content="website" />
+  <!-- Font Awesome أيقونات -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#0f1724; --bg2:#0b2540; --card:#0f1728;
+      --accent:#06b6d4; --glass:rgba(255,255,255,0.04);
+      --text:#e6eef6;
+      --muted:#a8c0cf;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+      font-family: Inter, Tahoma, Arial, sans-serif; background: linear-gradient(180deg,var(--bg1),var(--bg2));
+      color:var(--text); padding:24px;
+    }
+    .card{
+      width:100%; max-width:420px; background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:16px; padding:22px; box-shadow:0 10px 30px rgba(2,6,23,0.6); backdrop-filter: blur(6px);
+      border:1px solid rgba(255,255,255,0.03);
+    }
+    .avatar{
+      width:86px; height:86px; border-radius:14px; display:inline-flex; align-items:center; justify-content:center;
+      font-weight:800; font-size:36px; background: linear-gradient(135deg,var(--accent),#7c3aed); color:#001018;
+      margin:0 auto 12px;
+    }
+    h1{margin:0; font-size:22px; text-align:center}
+    p.role{margin:8px 0 18px; text-align:center; color:var(--muted)}
+    .info{display:flex; gap:10px; align-items:center; justify-content:space-between; padding:10px 12px; border-radius:10px; background:var(--glass); margin-bottom:10px}
+    .info .left{font-size:15px; color:var(--muted)}
+    .info .right{font-weight:700; word-break:break-all}
+    .icons{display:flex; gap:12px; justify-content:center; margin-top:14px}
+    .btn{
+      width:56px; height:56px; border-radius:12px; display:inline-grid; place-items:center; text-decoration:none; color:white;
+      font-size:20px; transition:transform .14s, box-shadow .14s;
+      box-shadow:0 6px 18px rgba(2,6,23,0.6);
+    }
+    .btn:hover{transform:translateY(-4px)}
+    .wa{background:#25D366}
+    .fb{background:#1877F2}
+    .mail{background:#EA4335}
+    .call{background:#0097a7}
+    .sms{background:#6c63ff}
+    .small{margin-top:12px; text-align:center; color:var(--muted); font-size:13px}
+    /* responsive */
+    @media (max-width:420px){
+      .card{padding:16px}
+      .avatar{width:72px;height:72px;font-size:30px}
+      .btn{width:50px;height:50px;font-size:18px}
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <div class="avatar" aria-hidden="true">ب</div>
+    <h1>بدر</h1>
+    <p class="role">تواصل معي بسهولة — مصر</p>
+
+    <!-- معلومات -->
+    <div class="info" title="الهاتف">
+      <div class="left"><i class="fa-solid fa-phone"></i> الهاتف</div>
+      <div class="right"><a href="tel:+201211378395" style="color:inherit; text-decoration:none">01211378395</a></div>
+    </div>
+
+    <div class="info" title="الإيميل">
+      <div class="left"><i class="fa-solid fa-envelope"></i> الإيميل</div>
+      <div class="right"><a href="mailto:badraldin656@gmail.com" style="color:inherit; text-decoration:none">badraldin656@gmail.com</a></div>
+    </div>
+
+    <div class="info" title="الفيسبوك">
+      <div class="left"><i class="fa-brands fa-facebook"></i> فيسبوك</div>
+      <div class="right"><a href="https://www.facebook.com/share/14Gh43q2gUk/" target="_blank" rel="noopener" style="color:inherit; text-decoration:none">صفحتي على فيسبوك</a></div>
+    </div>
+
+    <!-- أيقونات تواصل سريع -->
+    <div class="icons" role="navigation" aria-label="روابط التواصل">
+      <!-- واتساب — يفتح صفحتك على واتساب -->
+      <a class="btn wa" href="https://wa.me/201211378395" target="_blank" rel="noopener" aria-label="افتح محادثة واتساب مع بدر">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+      </a>
+
+      <!-- فيسبوك -->
+      <a class="btn fb" href="https://www.facebook.com/share/14Gh43q2gUk/" target="_blank" rel="noopener" aria-label="افتح فيسبوك">
+        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+      </a>
+
+      <!-- ايميل -->
+      <a class="btn mail" href="mailto:badraldin656@gmail.com" aria-label="إرسال إيميل لبدر">
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+      </a>
+
+      <!-- اتصال -->
+      <a class="btn call" href="tel:+201211378395" aria-label="اتصل ببدر">
+        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+      </a>
+
+      <!-- رسالة SMS -->
+      <a class="btn sms" href="sms:+201211378395" aria-label="ارسل رسالة SMS لبدر">
+        <i class="fa-solid fa-message" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    <p class="small">احفظ الرابط وشاركه — لو عايز أرفع الملف (ZIP) وارشدك خطوة بخطوة على GitHub Pages قولّي "اعمل ZIP".</p>
+  </main>
+</body>
+</html>
